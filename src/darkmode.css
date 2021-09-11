@@ -1,0 +1,63 @@
+
+
+
+body.dark-theme  {
+  
+  --primary-font: rgb(255, 255, 255);
+  --secundary-font: rgb(5, 5, 5);
+  --title-section-color:#b435fd;
+  --terceary-background-color: #a200ff65;
+  transition:0.5s;
+  background: rgb(27, 27, 27) !important;
+  color:white;
+  
+
+}
+body.dark-theme #preloader {
+  background:rgb(27, 27, 27);
+}
+body.dark-theme .nav_a  {
+  color:var(--primary-font);
+}
+body.dark-theme .cont-about .cont{
+  background-color: var(--terceary-background-color);
+  box-shadow: 0 0 10px rgba(183, 0, 255, 0.383);
+}
+body.dark-theme .box-click{
+  color: rgb(180, 180, 180);
+}
+
+/*scroll styles*/
+body.dark-theme::-webkit-scrollbar {
+  
+  background-color: var(--secundary-background);
+}
+
+body.dark-theme::-webkit-scrollbar-thumb {
+  background: rgba(190, 190, 190, 0.842);
+  border: 3px solid  var(--secundary-background);
+}
+
+body.dark-theme::-webkit-scrollbar-thumb:hover {
+  background: rgba(231, 231, 231, 0.966);
+  
+}
+body.dark-theme .iconos-lenguajes{
+  
+  width:40%;
+
+}
+body.dark-theme .pbox{
+  
+  box-shadow:0 0 15px rgba(164, 3, 179, 0.712) ;
+  background-color:var(--terceary-background-color) ;
+ 
+}
+
+body.dark-theme .icono-contacto{
+  color: var(--portada-font1);
+}
+
+body.dark-theme .icono-contacto:hover{
+  color: var(--portada-font2);
+}

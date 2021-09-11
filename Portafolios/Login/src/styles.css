@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace  ;
+}
+.padre1,.padre2{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    top: 0;
+    left: 0;
+    
+    backdrop-filter: blur(4px) brightness(45%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.padre1{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    
+    
+}
+
+.conteiner{
+    
+    backdrop-filter: brightness(90%);
+    background-clip: text;
+    background: rgba(255, 255, 255, 0.301);
+    border-radius:15px;
+    padding: 15px;
+    width: 60%;
+    min-width:300px;
+    max-width:400px;
+    display: block;
+}
+
+
+.inputprincipal{
+    display: block;
+    width: 80%;
+    margin: 10px auto ;
+    outline: none; 
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    
+    
+
+}
+
+.sesionIniciada{
+    text-align:left;
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    color: #fff;
+}
+.bLogin{
+    display: block;
+    margin: 10px auto;
+    outline: none; 
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+
+}
+.bLogin:hover{
+    cursor: pointer;
+    transition: background .2s;
+    background:rgb(204, 204, 204);
+}
+.checkbox{
+    margin: 4px;
+}
+.checkbox:hover{ 
+    cursor: pointer;
+}

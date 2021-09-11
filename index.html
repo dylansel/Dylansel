@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Seltzer</title>
+    <link rel="shortcut icon" href="src/img/logo.png">
+    <meta name="description"
+        content="Soy Desarrollador Web Front-End. Hice esta pagina para presentar mi experiencia y proyectos. Entra para mas informacion">
+    <meta name="author" content="Dylan Seltzer">
+    <meta name="keywords" content="Desarrollador web,front end, dylan, seltzer">
+    <meta property="og:image" content="src/img/logo.png">
+    <meta property="og:description"
+        content="Soy Desarrollador Web Front-End. Hice esta pagina para presentar mi experiencia y proyectos. Entra para mas informacion">
+    <meta property="og:title" content="Dylan Seltzer">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/app.css">
+    <link rel="stylesheet" href="src/darkmode.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class="preloaderScroll" id="page-top">
+    <!--Preloader-->
+    <div class="preloader" id="preloader">
+        <h2>Dylan Seltzer</h2>
+        <div class="lds-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!--Header-->
+
+    <header class="header" id="header">
+        <div class="logo-nav"><a href="#page-top"><img src="src/img/logo.png" title="Logo"
+                    alt="Logo DS"></a></div>
+        <div class="nav" ID="mainNav">
+            <ol id="nav-res">
+                <li><a href="#page-top"  class="nav_a" id="bInicio">Inicio</a></li>
+                <li><a href="#aboutMe"  class="nav_a" id="bAboutMe">Acerca de</a></li>
+                <li><a href="#portafolios"  class="nav_a" id="bPortafolios">Portafolio</a></li>
+                <li><a href="#contacto"  class="nav_a" id="bContacto">Contacto</a></li>
+            </ol>
+            <div class="navres">
+                <div class="icon-dark-light" onclick="change_dark_light(true)"><i title="Activar modo oscuro"class="fas fa-sun nav_a"></i></li></div>
+                <div class="boton-menu"><i class="fas fa-bars nav_a" onclick="responsiveMenu()"></i></div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        
+        <div id="background-portada"></div>
+        <div class="padre-portada">
+            <section class="portada" id="portada">
+            <div id="avatar-portada"><img src="src/img/Avatar-dylan.png" alt=""></div>
+            <div class="portada-texto">
+
+                <h1>Dylan Seltzer</h1>
+                <h2>Desarrollador Web <span class="inline-block">Front End</span></h2>
+            </div>
+
+            </section>
+        </div>
+        
+        <!--seccion about-me-->
+        <section class=" section-default about-me" id="aboutMe">
+            <h2 class="title-section">Acerca De</h2>
+            <div class="conteiner flex" id="presentacion_habilidades">
+                <div class="cont-about presentacion">
+                    <h3>¿Quien Soy?</h3>
+                    <p class="cont">Hola, soy <span class="negrita">Dylan Seltzer</span>, desde chiquito me interese por la tecnología y la computación. A mi criterio la programación es un arte, cualquiera puede dibujar o tocar un instrumento, pero solo un verdadero artista se gana la vida <span class="negrita">haciendo lo que ama</span>.</p>
+                </div>
+                <div class="cont-about habilidades">
+                    <h3>Cualidades</h3>
+                    <div class="cont">
+                        <ul>
+                            <li>✔️ Desarrollador Web Front End</li>
+                            <li>✔️ Resolucion de conflictos</li>
+                            <li>✔️ Autodidacta</li>
+                            <li>✔️ Proactivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="programas" id="programas">
+                    <h3>Programas que manejo</h3>
+                    <div class="cont iconos programas">
+                        <div class="grid icono1">
+                            <div class="icono ico1"><img src="src/img/logos/Word-logo.png" alt="Word logo"><h4>Word</h4></div>
+                            <div class="icono ico2"><img src="src/img/logos/Excel-logo.png" alt="Excel logo"><h4>Excel</h4></div>
+                            <div class="icono ico3"><img src="src/img/logos/PowerPoint-logo.png" alt="PowerPoint logo"><h4>PowerPoint</h4></div>
+
+                        </div>    
+                        <div class="grid icono1">
+                            <div class="icono ico4"><img src="src/img/logos/Drive-logo.png" alt="Drive logo"><h4>Drive</h4></div>
+                            
+                            <div class="icono ico5"><img src="src/img/logos/PhotoShop-logo.png" alt="Photoshop logo"><h4>PhotoShop</h4></div>
+                            <div class="icono ico6"><img src="src/img/logos/illustrator-logo.png" alt="illustrator logo"><h4>Illustrato</h4></div>
+                        </div>
+                        <div class="grid icono2 icon2-programa">
+                            <div class="icono ico7"><img src="src/img/logos/Github-logo.png" alt="GitHube logo"><h4>GitHube</h4></div>
+                            <div class="icono ico8"><img src="src/img/logos/VSC-logo.png" alt="Visual Studio Code logo"><h4>Visual Studio Code</h4></div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lenguajes" id="lenguajes">
+                    <h3>Lenguajes</h3>
+                    <div class="cont iconos">
+                        <div class="grid icono1">
+                            <div class="icono ico9"><img src="src/img/logos/HTML5-logo.png" alt="HTML5 logo"><h4>HTML 5</h4></div>
+                            <div class="icono ico10"><img src="src/img/logos/CSS3-logo.png" alt="CSS3 logo"><h4>CSS 3</h4></div>
+                            <div class="icono ico11"><img src="src/img/logos/JS-logo.png" alt="JS logo"><h4>JavaScript</h4></div>
+                        </div>
+                        <div class="grid icono2">
+                            <div class="icono ico12"><img src="src/img/logos/Python-logo.png" alt="Python logo"><h4>Python</h4></div>
+                            <div class="icono ico13"><img src="src/img/logos/SQL-logo.png" alt="SQL logo"><h4>SQL</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!--seccion portafolio-->
+        <section class="section-default portafolio" id="portafolios">
+        <h2 class="title-section">Portafolio</h2>
+        <div class="conteiner">
+            
+            <div class="box-portafolio" id="box-portafolio">
+                <div class="pbox">
+                    <a href="Portafolios/Login/index.html"><img id="img-box1" src="src/img/portadas_portafolio/portada_login.png"  alt="Login Portafolio"></a>
+                    <div class="portada-detalles">
+                        <h5>Login Basico</h5>
+                        <p>Este es un diseño de inicio de secion simple utilizando solamente html y css</p>
+                        <p class="box-click">Click en la imagen para abrir</p>
+                    </div>
+                </div>
+                <div class="pbox"><a href="Portafolios/Netflix/index.html"><img id="img-box2" src="src/img/portadas_portafolio/portada_netflix.png" alt="Netflix Portafolio"></a>
+                    <div class="portada-detalles">
+                        <h5>Prototipo Netflix </h5>
+                        <p>Es un prototipo simple de lo que es la pagina de peliculas y series Netflix (unresponsive)</p>
+                        <p class="box-click">Click en la imagen para abrir</p>
+                    </div>
+                </div>
+                <div class="pbox"><a href="Portafolios/Youtube/index.html"><img id="img-box3"src="src/img/portadas_portafolio/portada_youtube.png" alt="Youtube Portafolio"></a>
+                    <div class="portada-detalles">
+                        <h5>Prototipo Youtube</h5>
+                        <p>Es un prototipo muy basico de youtube solo con html y css (unresponsive)</p>
+                        <p class="box-click">Click en la imagen para abrir</p>
+                    </div>
+                </div>
+                <!-- Se pueden poner todos los portafolios que se quieran pero hay que cambiar el id de img, por el numero de box:
+                <div class="pbox"><a href=""><img id="img-box4" src="" alt=""></a></div>
+                <div class="pbox"><a href=""><img id="img-box5" src="" alt=""></a></div>
+                <div class="pbox"><a href=""><img id="img-box6" src="" alt=""></a></div>
+                -->
+            </div>
+        </div>
+        </section>
+
+        <!--seccion contacto-->
+        <section class="section-default contacto" id="contacto">
+            <h2 class="title-section">contacto</h2>  
+            <div class="conteiner">
+                <p class="texto-contacto">Ante cualquer consulta pueden contactarme mediante</p>
+                <div class="iconos-contactos">
+                    <div class="icono-contact-box"><a href="mailto:dylanseltzer4@gmail.com"  class="box-link-contact" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope icono-contacto"></i><p class="texto-icono-contacto">Email</p></a></div>
+                    <div class="icono-contact-box"><a href="https://github.com/dylansel" class="box-link-contact" target="_blank" rel="noopener noreferrer"><i class="fab fa-github icono-contacto"></i><p class="texto-icono-contacto">GitHub</p></a></div>
+                    <div class="icono-contact-box"><a href="https://www.linkedin.com/in/dylan-seltzer/" class="box-link-contact" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in icono-contacto"></i><p class="texto-icono-contacto">Linkedin</p></a></div>
+                    <div class="icono-contact-box"><a href="https://www.instagram.com/dylanssel/" class="box-link-contact" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram icono-contacto"></i><p class="texto-icono-contacto">Instagram</p></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <p>Page designed and developed  <span class="inline-block">by Dylan Seltzer</span> </p>
+            <p>Copyright 2021 © | <span class="inline-block">www.Dylansel.tk</span> </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!--Javascript APP-->
+    <script src="src/app.js"></script>
+</body>
+
+</html>
