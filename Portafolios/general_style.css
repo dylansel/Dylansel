@@ -19,9 +19,11 @@
     background:#7500b8d0;
     bottom:10px;
     left:10px;
+    transition: background .2s;
 }
 .bvolver:hover {
     cursor:pointer;
+    background:#9a00f3d8;
 
 }
 .fa-arrow-left{
