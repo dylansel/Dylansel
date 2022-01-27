@@ -3,7 +3,7 @@ const xhr = new XMLHttpRequest();
 const apiKey = '108f05631cc6fb2ecf5a39813cbd8536'
 var latitude,longitude,geo,temperature,locat
 if(navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(success)
+    navigator.geolocation.getCurrentPosition(success,error)
 }else{
     alert('No es compatible con geolocalizacion')
 }
@@ -15,6 +15,11 @@ function success(geoloc){
     xhr.addEventListener("load",onRequestHandler);
     xhr.open("GET",apiUrl)
     xhr.send()
+    return true
+}
+function error(error){
+    console.error("Error de geolocalizacion")
+    alert('Es necesario activar la geolocacion para determinar la temperatura segun tu zona. Todos los datos son confidenciales y no se guardaran')
 }
 
 function onRequestHandler(){
