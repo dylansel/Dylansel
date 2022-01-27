@@ -464,6 +464,7 @@ main {
   transition:1s;
   transform:translateY(-150px);
   z-index:15;
+  
 }
 .portada-detalles-text-active{
   transform: translateY(0);
@@ -480,15 +481,17 @@ main {
 }
 .portada-detalles p{
   margin: 5px 15px;
-  
-  
-  
-  
+
 }
 .portada-detalles .box-click{
+  
   text-align: center;
-  color: rgb(68, 68, 68);
+  color: rgba(68, 68, 68, 0.911);
   font-size: 12px;
+  position: absolute;
+  top:105px !important;
+  left:30px !important;
+  
 }
 
 .texto-contacto{

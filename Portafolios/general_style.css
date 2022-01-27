@@ -1,0 +1,31 @@
+/*************************** Estilos generales ****************************/
+/*iconos*/
+@import 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'; 
+
+/*volver al inicio*/
+.bvolver{
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+    width:100px;
+    text-align: center;
+    height:40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background:#7500b8d0;
+    bottom:10px;
+    left:10px;
+}
+.bvolver:hover {
+    cursor:pointer;
+
+}
+.fa-arrow-left{
+    font-size:25px;
+    margin-right:5px;
+    
+}
