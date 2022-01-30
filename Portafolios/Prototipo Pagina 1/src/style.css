@@ -34,6 +34,7 @@ html{
     color: white;
     position: relative;
     font-size:2.4rem;
+    z-index: 200;
     
     
 }
@@ -253,17 +254,22 @@ html{
 @media (max-width: 900px) {
 
     .news {
-        width:70%;
-       display:flex;
-       position:relative;
-       left:80px;
-       flex-direction: column-reverse;
-       padding: 0px !important;
+        width:100%;
+        margin: auto;
+        display:flex;
+        position:relative;
+        flex-direction: column-reverse;
+        padding: 0px !important;
+
     }
     .img-1{
         width: 250px;
-        padding-left:0px;
-        background:transparent !important;
+        padding:0px;
+        background:transparent ;
+        margin: auto;
+    }
+    .img-1 img{
+        left:0px;
     }
     .product{
         width:420px;
@@ -272,17 +278,20 @@ html{
     }
     .product h3{
         position:relative;
-        left:-70px;
+        left:0px;
         font-size: 35px;
         font-family: 'Source Code Pro', monospace;
         
     }
     .news p{
         width:250px;
-        top:0px;
-        left:-50px;
+        font-size:1.2rem;
+        position: relative;
+        top:-20px ;
+        left:0px;
         display: block;
         transform: translate(0px,-100%);
+        text-align: center;
     }
     
 }
@@ -319,4 +328,57 @@ html{
     .nav ul li a{
         font-size:2rem;
     }
+}
+
+@media (max-width:600px){
+    html{
+        font-size:12px;
+    }
+    .news {
+        width:100%;
+        margin: auto;
+        display:flex;
+        position:relative;
+        flex-direction: column-reverse;
+        padding: 0px;
+        
+
+    }
+    .img-1{
+        width: 200px;
+        padding:0px;
+        background:transparent ;
+        margin: auto;
+    }
+    .img-1 img{
+        left:0px;
+    }
+    .product{
+        width:100%;
+    }
+    .product h3{
+        max-width:250px;
+        margin: auto;
+        font-size: 30px;
+    }
+    .news p{
+        font-size:1rem;
+        width:200px;
+    }
+
+
+    .aboutsection{
+        grid-template-columns: 100%;
+        border-radius:20px 20px 0 0;
+    }
+    
+    .map iframe{
+        border-radius:20px 20px 0 0;
+        height:280px;
+    }
+    .description{
+        margin: 5px;
+        font-size:1rem;
+    }
+    
 }
