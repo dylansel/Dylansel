@@ -133,6 +133,7 @@ html{
     width: 90%;
     margin: 20px auto;
     box-sizing: border-box; 
+    max-width: 1000px;
 }
 
 .section{
