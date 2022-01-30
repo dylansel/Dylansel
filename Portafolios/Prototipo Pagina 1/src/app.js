@@ -17,12 +17,15 @@ const typingTitle = ()=>{
 }
 typingTitle()
 setInterval(()=> typingTitle(),700*textTyping.length)
-
+if(sWidth<=900){setTimeout(animationProduct, 2000)}
 let img1 = document.getElementById("img-1")
-img1.addEventListener("mouseenter",()=>{
+img1.addEventListener("mouseenter",animationProduct)
+function animationProduct(){
+    
     img1.style.transform = (sWidth>=900)?"translate(0,15px)":"translate(0)";
     document.getElementById("productDescription").style.transform = (sWidth>=900)?"translate(0)":"translate(0)";
-    img1.removeEventListener("mouseenter",MouseEvent);})
+    img1.removeEventListener("mouseenter",MouseEvent);
+}
 
 function navResActive(){
     nav = document.getElementById("nav");
